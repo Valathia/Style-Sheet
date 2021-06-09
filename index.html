@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title> My Website style Guide</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Mr+Dafoe&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Aldrich&family=Roboto:ital@0;1&family=Share+Tech+Mono&display=swap"
+        rel="stylesheet">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+        integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <!-- first include tsParticles -->
+    <script src="https://cdn.jsdelivr.net/npm/tsparticles@1.12.7/dist/tsparticles.min.js"></script>
+    <!-- then include jquery wrapper -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery-particles@1.12.7/dist/jquery.particles.min.js"></script>
+
+</head>
+
+<body>
+    <div id="tsparticles"></div>
+        <header>
+            <h1> My Website Style Guide <span class="titlespan"> by: <span class="signature">Valathia</span></span></h1>
+
+            <nav>
+                <ul>
+                    <li><a href="#bcolors"> Colors </a></li>
+                    <li><a href="#bfonts"> Fonts </a></li>
+                    <li><a href="#btextstyles"> Text Styles </a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <div id="bcolors" class="container">
+            <h2> Colors </h2>
+
+            <div class="colors">
+
+                <div class="color1 colorcontainer"> <p class="colortext"> #FF0099 <br> Deep Pink </p> </div>
+                <div class="color2 colorcontainer"> <p class="colortext"> #F8F8FF <br> Ghost White </p> </div>
+                <div class="color3 colorcontainer"> <p class="colortext"> #B7EBE8 <br> Magic Mint </p>  </div>
+                <div class="color4 colorcontainer"> <p class="colortext"> #98FB98 <br> Pale Green </p> </div>
+                <div class="color5 colorcontainer"> <p class="colortext"> #DB7093 <br> Pale Violet Red </p> </div>
+                <div class="color6 colorcontainer"> <p class="colortext"><span class="dark"> #4E4343 <br> Graphite </span> </p> </div>
+                
+
+            </div>
+  
+        </div>
+
+        <div id="bfonts" class="fonts container">
+            <h2> Fonts</h2>
+
+            <h3 class="ald"> Aldrich </h3>
+            <p class="ald">Aldrich is a rounded yet squarely proportioned font that is reminiscent of early 20th Century gothic styles. With a solid stance and confident mono-weight strokes, Aldrich is a hardworking family with roots in Midwestern ethics.</p> 
+
+            <h3 class="rob" >Roboto </h3>
+            <p class= "rob">Roboto has a dual nature. It has a mechanical skeleton and the forms are largely geometric. At the same time, the font features friendly and open curves. While some grotesks distort their letterforms to force a rigid rhythm, Roboto doesn’t compromise, allowing letters to be settled into their natural width. This makes for a more natural reading rhythm more commonly found in humanist and serif types.</p>
+
+            <h3 class="sha"> Share Tech Mono </h3>
+            <p class="sha"> Share Tech Mono is a monospaced sans serif, based on the Share family. There is also Share Tech, a proportionally spaced version. </p>
+
+        </div>
+
+        <div id="btextstyles" class="container">
+            <h2> Text Styles </h2>
+
+            <div class="textstyles">
+                <div>
+                    <h1> H1: Main Page Heading</h1>
+                    <ul>
+                        <li>Font Size: 55px</li>
+                        <li>Font Family: Aldrich </li>
+                        <li>Font-Weight: Regular 400</li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h2> H2: Subheading</h2>
+                    <ul>
+                        <li>Font Size: 24px</li>
+                        <li>Font Family: Aldrich </li>
+                        <li>Font-Weight: Regular 400</li>
+                    </ul>
+                </div>
+
+                <div>
+                    <p> P: Paragraph Text </p>
+                    <ul>
+                        <li>Font Size: 16px</li>
+                        <li>Font Family: Roboto </li>
+                        <li>Font-Weight: Regular 400</li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+</body>
+
+<script>
+    $("#tsparticles")
+        .particles()
+        .init(
+            {
+                "interactivity": {
+                    "events": {
+                        "onHover": {
+                            "enable": true,
+                            "mode": "bubble",
+                        },
+                        "onClick": {
+                            "enable": true,
+                            "mode": "push",
+                            "color": {
+                                "value": "#F9646C",
+                            },
+                        },
+                    },
+                    "modes": {
+                        "bubble": {
+                            "opacity": 0.8,
+                            "size": 5,
+                            "color": {
+                                "value": "#F9646C",
+                            },
+                        },
+                    },
+                },
+                "particles": {
+                    "color": {
+                        "value": "#000",
+                    },
+                    "move": {
+                        "enable": true,
+                    },
+                    "opacity": {
+                        "value": 0.5,
+                    },
+                    "size": {
+                        "value": 2,
+                    },
+                },
+            },
+            function (container) {
+                // container is the particles container where you can play/pause or stop/start.
+                // the container is already started, you don't need to start it manually.
+            },
+        );
+</script>
+
+</html>
